@@ -1,0 +1,1039 @@
+{% extends "griding/mhc/layout/base.html" %} 
+{% block meta %}<meta http-equiv="refresh" content="300">{% endblock %} 
+{% block title %}
+Home main dashboard
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg bg-light">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-success fs-1" style="color: white">
+            โรงงานผลิตอาหารสัตว์น้ำมหาชัย (ไลน์ผลิตอาหารกุ้ง)
+          </div>
+          <div class="card-body bg-light" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h2 class="card-header text-center bg-secondary" style="color:white">เครื่องบดละเอียด(ไลน์ผลิตอาหารกุ้ง) MUYANG</h2>
+                  <div class="card-body bg-secondary">
+                    <!-- Start Row 1 MUYANG -->
+                    <div class="row m-3">
+                      <!-- MY1 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY1" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY1"> PULVERIZER 1</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY1" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY1">PULVERIZER 1</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="card p-1">
+                                          <p >CURRENT : <span id="ampMY1"></span></p>
+                                          <p>Utilize : <span id="putilizeloadMY1"></span></p>
+                                          <p>TURN OFF : <span id="pturnoffMY1"></span></p>
+                                          <p>NO LOAD : <span id="pnoloadMY1"></span></p>
+                                          <p>LIGHT LOAD : <span id="plightloadMY1"></span></p>
+                                          <p>NORMAL LOAD : <span id="pnormalloadMY1"></span></p>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="card p-1 fs-6" id="piechartmy1" style="width: 100%; height: 100%;"> </div>
+                                      </div> 
+                                    </div>                                   
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY2 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY2" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY2"> PULVERIZER 2</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY2" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY2">PULVERIZER 2</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY2"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY2"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY2"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY2"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY2"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY2"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy2" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY3 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY3" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY3"> PULVERIZER 3</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY3" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY3">PULVERIZER 3</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY3"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY3"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY3"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY3"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY3"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY3"></span></p> 
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy3" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY4 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY4" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY4"> PULVERIZER 4</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY4" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMy4">PULVERIZER 4</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY4"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY4"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY4"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY4"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY4"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY4"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy4" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY5 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY5" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY5"> PULVERIZER 5</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY5" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY5" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY5">PULVERIZER 5</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY5"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY5"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY5"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY5"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY5"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY5"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy5" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div> 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div> 
+                      <!-- MY6 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY6" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY6"> PULVERIZER 6</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY6" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle6" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY6">PULVERIZER 6</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY6"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY6"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY6"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY6"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY6"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY6"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy6" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div> 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>                
+                    </div> 
+                     <!--End Row 1 MUYANG  -->
+                    <!-- Start Row 2 MUYANG -->
+                    <div class="row m-3">
+                      <!-- MY7 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY7" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY7"> PULVERIZER 7</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY7" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY7" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY7">PULVERIZER 7</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY7"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY7"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY7"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY7"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY7"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY7"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy7" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div> 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY8 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY8" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY8"> PULVERIZER 8</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY8" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY8" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY8">PULVERIZER 8</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY8"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY8"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY8"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY8"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY8"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY8"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy8" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY9 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY9" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY9"> PULVERIZER 9</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY9" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY9" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modla-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY9">PULVERIZER 9</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY9"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY9"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY9"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY9"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY9"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY9"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy9" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY10 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY10" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY10"> PULVERIZER 10</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY10" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY10" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMy10">PULVERIZER 10</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY10"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY10"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY10"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY10"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY10"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY10"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy10" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- MY11 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY11" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY11"> PULVERIZER 11</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY11" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleMY11" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY11">PULVERIZER 11</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY11"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY11"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY11"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY11"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY11"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY11"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy11" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div> 
+                      <!-- MY12 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderMY12" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalMY12"> PULVERIZER 12</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalMY12" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle6" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleMY12">PULVERIZER 12</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampMY12"></span></p>
+                                        <p>Utilize : <span id="putilizeloadMY12"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffMY12"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadMY12"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadMY12"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadMY12"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartmy12" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>                
+                    </div> 
+                     <!--End Row 2 MUYANG  -->   
+                </div>
+              </div>
+              </div>
+            </div> 
+             <!-- Module 2  -->
+             <div class="row mt-1">
+                <div class="col">
+                  <div class="card">
+                    <h2 class="card-header bg-secondary text-center" style="color:white">เครื่องบด (ไลน์ผลิตอาหารกุ้ง) ATOMIZER</h2>
+                    <div class="card-body bg-secondary">
+                      <!-- Start Row 1 ATOMIZER -->
+                    <div class="row m-3">
+                      <!-- AT1 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderAT1" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalAT1"> ATOMIZER 1</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalAT1" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleAT1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleAT1">ATOMIZER 1</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampAT1"></span></p>
+                                        <p>Utilize : <span id="putilizeloadAT1"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffAT1"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadAT1"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadAT1"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadAT1"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartat1" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- AT2 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderAT2" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalAT2"> ATOMIZER 2</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalAT2" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleAT2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleAT2">ATOMIZER 2</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampAT2"></span></p>
+                                        <p>Utilize : <span id="putilizeloadAT2"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffAT2"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadAT2"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadAT2"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadAT2"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartat2" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- AT3 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderAT3" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalAT3"> ATOMIZER 3</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalAT3" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleAT3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleAT3">ATOMIZER 3</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampAT3"></span></p>
+                                        <p>Utilize : <span id="putilizeloadAT3"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffAT3"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadAT3"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadAT3"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadAT3"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartat3" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- AT4 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderAT4" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalAT4"> ATOMIZER 4</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalAT4" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleAT4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleAT4">ATOMIZER 4</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampAT4"></span></p>
+                                        <p>Utilize : <span id="putilizeloadAT4"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffAT4"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadAT4"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadAT4"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadAT4"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartat4" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- AT5 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderHMMY" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalHMMY"> HAMMERMILL MUYANG</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalHMMY" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleHMMY" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleHMMY">HAMMERMILL MUYANG</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampHMMY"></span></p>
+                                        <p>Utilize : <span id="putilizeloadHMMY"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffHMMY"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadHMMY"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadHMMY"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadHMMY"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piecharthmmy" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>                
+                    </div>     
+                  </div>
+                </div>
+                </div>
+              </div>  
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+<!-- ไลน์ผลิตอาหารปลา -->
+<div class="row">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg bg-light">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-success fs-1" style="color: white">
+            โรงงานผลิตอาหารสัตว์น้ำมหาชัย (ไลน์ผลิตอาหารปลา)
+          </div>
+          <div class="card-body bg-light" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h2 class="card-header text-center bg-secondary" style="color:white">เครื่องบดละเอียด (ไลน์ผลิตอาหารปลา)</h2>
+                  <div class="card-body bg-secondary">
+                    <!-- Start Row 1 MUYANG -->
+                    <div class="row m-3">
+                      <!-- Fish AP6-1 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFAP1" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFAP1"> AP6 - 1</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFAP1" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFAP1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFAP1">AP6 - 1</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="card p-1">
+                                          <p >CURRENT : <span id="ampFAP1"></span></p>
+                                          <p>Utilize : <span id="putilizeloadFAP1"></span></p>
+                                          <p>TURN OFF : <span id="pturnoffFAP1"></span></p>
+                                          <p>NO LOAD : <span id="pnoloadFAP1"></span></p>
+                                          <p>LIGHT LOAD : <span id="plightloadFAP1"></span></p>
+                                          <p>NORMAL LOAD : <span id="pnormalloadFAP1"></span></p>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="card p-1 fs-6" id="piechartFAP1" style="width: 100%; height: 100%;"> </div>
+                                      </div> 
+                                    </div>                                   
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- Fish AP6-2 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFAP2" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFAP2"> AP6 - 2</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFAP2" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFAP2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFAP2">AP6 - 2</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFAP2"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFAP2"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFAP2"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFAP2"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFAP2"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFAP2"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFAP2" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- Fish AP6-3 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFAP3" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFAP3"> AP6 - 3</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFAP3" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFAP3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFAP3">AP6 - 3</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFAP3"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFAP3"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFAP3"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFAP3"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFAP3"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFAP3"></span></p> 
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFAP3" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- Fish AP6-4 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFAP4" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFAP4">AP6 - 4</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFAP4" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFAP4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFAP4">AP6 - 4</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFAP4"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFAP4"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFAP4"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFAP4"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFAP4"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFAP4"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFAP4" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      
+                                      
+                    </div> 
+                     <!--End Row 1 MUYANG  -->
+                    <!-- Start Row 2 MUYANG -->
+                    <div class="row m-3">
+                      <!-- Fish AP6-5 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFAP5" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFAP5"> AP6 - 5</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFAP5" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFAP5" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFAP5">AP6 - 5</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFAP5"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFAP5"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFAP5"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFAP5"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFAP5"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFAP5"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFAP5" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div> 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div> 
+                      <!-- Fish AP6-6 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFAP6" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFAP6"> AP6 - 6</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFAP6" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle6" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFAP6">AP6 - 6</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFAP6"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFAP6"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFAP6"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFAP6"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFAP6"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFAP6"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFAP6" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div> 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- Fish MY7 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFMY7" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFMY7"> PULVERIZER MY-7 </button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFMY7" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFMY7" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFMY7">PULVERIZER MY-7 </h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFMY7"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFMY7"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFMY7"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFMY7"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFMY7"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFMY7"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFMY7" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>
+                      <!-- Fish MY8 -->
+                      <div class="col">
+                        <div  class="card shadow-lg">
+                          <button id ="bggriderFMY8" type="button" class="btn btn-light fs-4 text-center" style="height: 125px;" 
+                          data-toggle="modal" 
+                          data-target="#ModalFMY8"> PULVERIZER MY-8</button>
+                          <!-- Modal -->
+                          <div class="modal fade bd-example-modal-lg" id="ModalFMY8" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleFMY8" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h5 class="modal-title" id="ModalLongTitleFMY8">PULVERIZER MY-8</h5>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="card p-1">
+                                        <p>CURRENT : <span id="ampFMY8"></span></p>
+                                        <p>Utilize : <span id="putilizeloadFMY8"></span></p>
+                                        <p>TURN OFF : <span id="pturnoffFMY8"></span></p>
+                                        <p>NO LOAD : <span id="pnoloadFMY8"></span></p>
+                                        <p>LIGHT LOAD : <span id="plightloadFMY8"></span></p>
+                                        <p>NORMAL LOAD : <span id="pnormalloadFMY8"></span></p>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card p-1 fs-6" id="piechartFMY8" style="width: 100%; height: 100%;"> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                               
+                        </div>    
+                      </div>                
+                    </div> 
+                     <!--End Row 2 MUYANG  -->   
+                </div>
+              </div>
+            </div>
+            </div> 
+             <!-- Module 2  -->   
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+
+{% endblock content%}

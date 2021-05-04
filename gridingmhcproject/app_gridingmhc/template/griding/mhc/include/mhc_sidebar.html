@@ -1,0 +1,38 @@
+{% load static %}
+
+<div class="wrapper">
+  <!-- Sidebar -->
+  
+  <nav id="sidebar" class="bg-success">
+    <div class="sidebar-header">
+      <P style="font-weight: bold; font-size:large;">MAHACHAI FACTORY (SHRIMP FEED)</P>
+      <ul class="setlist">
+        <a href="about" style="text-decoration: none;">SUMMARY ANALYZE</a>
+      </ul>
+      <ul class="setlist">
+        <a href="about" style="text-decoration: none;">GRIDER CURRENT (Amp)</a>
+      </ul>
+      <ul class="setlist">
+        <a href="#" style="text-decoration: none;">GRIDER VIBRATION </a>
+      </ul>
+      <ul class="setlist">
+        <a href="#" style="text-decoration: none;">BLOWER CURRENT (Amp)</a>
+      </ul>
+      <ul class="setlist">
+        <a href="aboutme" style="text-decoration: none;">BLOWER VIBRATION</a>
+      </ul>
+      <ul class="setlist">
+        <a href="contract" style="text-decoration: none;">BEARING TEMPERATURE</a>
+      </ul>
+      <ul class="setlist">
+        <a href="contract" style="text-decoration: none;">AIR TEMPERATURE</a>
+      </ul>
+    </div>
+  </nav>
+
+  <article style="padding: 20px;">
+    {% block content %}
+    {%endblock content%}
+  </article>
+</>
+</div>

@@ -1,0 +1,49 @@
+
+.wrapper {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height:auto;
+    align-items: stretch;
+  }
+  
+  #sidebar {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 270px;
+    min-height: 100vh;
+  
+    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.5), 0 50px 50px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    color: white
+  }
+  
+  #sidebar .sidebar-header {
+      text-align: left;
+      width: 250px;
+      height: 250px;
+      padding-bottom: 50px;
+    }
+  
+    #sidebar .setlist{
+      margin-top: 20px;
+      margin-left: -25px;
+    }
+  
+    #sidebar a:visited{
+      color:white;
+  
+    }
+  
+    #sidebar a:hover {
+      color: yellow;
+  
+    }
+  
+  
+  

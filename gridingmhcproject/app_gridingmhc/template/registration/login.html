@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h2 class="text-center" style="margin-top: 50px;">
+  <p class="fs-1" style="color:white;">กรุณาเข้าสู่ระบบ</p>
+  <p class="fs-1" style="color:white;">CPF DASHBOARD</p>
+</h2>
+
+<div>
+  <form method="post">
+    <div class="d-flex justify-content-center" style="margin-top: 50px;">
+      <div class="col bg-warning shadow-lg" style="max-width: 18rem; text-align:center;">
+        {% csrf_token %}
+        <div class="card p-3 shadow-lg">
+          {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-warning fs-6 shadow-lg">เข้าสู่ระบบ</button>
+    </div> 
+  </form>
+</div>
+
+  <footer class="text-center" style="margin-top: 50px;">
+    <p class="fs-5" style="color:white;">ติอต่อขอ username และ password ได้ที่ สำนักวิศวกรรมกลาง ซีพีเอฟ มหาชัย</p>
+    <p class="fs-6" style="color:white;">Create Website by CPF Central Engineering</p>
+  </footer>
+
+
+
+{% endblock %}
